@@ -1,0 +1,27 @@
+.acceuil-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #F6F6F6;
+    padding: 4% 3%;
+    border-radius: 15px;
+    gap: 40px 40px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .acceuil-ul {
+        grid-template-columns: 1fr 1fr;
+        padding: 15px;
+        gap: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .acceuil-ul {
+        grid-template-columns: 1fr;
+        padding: 15px 0 0 0;
+        gap: 25px 0px;
+        background-color: white;
+    }
+}
