@@ -1,0 +1,64 @@
+.collapse {
+    margin: 3% 10%;
+}
+
+.collapse-titre {
+    background-color: #FF6060;
+    color: white;
+    border-radius: 4px;
+    padding: 1% 2%;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.collapse-img {
+    height: 15px;
+    width: 20px;
+}
+
+.collapse-vers-bas {
+    animation: animflechehaut 350ms linear;
+}
+
+@keyframes animflechehaut {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.collapse-vers-haut {
+    animation: animflechebas 350ms linear;
+}
+
+@keyframes animflechebas {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.collapse-description {
+    background-color: #F6F6F6;
+    padding: 3% 2% 1% 2%;
+    margin-top: -3px;
+    line-height: 130%;
+    border-radius: 0px 0px 4px 4px;
+}

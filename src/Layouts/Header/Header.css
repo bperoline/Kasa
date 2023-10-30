@@ -1,0 +1,23 @@
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 3%;
+}
+
+a {
+    color: #FF6060;
+}
+
+.header-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.header-li {
+    text-align: center;
+}
+
+.header-li:hover {
+    text-decoration: underline;
+}
