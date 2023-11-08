@@ -1,0 +1,14 @@
+.tag-li {
+    margin: 0 1% 1% 0;
+}
+
+.tag-span {
+    background-color: #FF6060;
+    color: white;
+    height: 25px;
+    width: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
