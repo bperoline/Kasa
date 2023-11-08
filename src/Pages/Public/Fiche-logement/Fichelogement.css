@@ -1,0 +1,6 @@
+.tag {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+}

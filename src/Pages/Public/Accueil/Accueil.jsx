@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "@/Pages/Public/Acceuil/Acceuil.css";
+import "@/Pages/Public/Accueil/Accueil.css";
 
 import { NavLink } from 'react-router-dom';
 
@@ -12,11 +12,11 @@ import Card from "@/Components/Card/Card.jsx"
 import LogementService from "@/_Services/Logement.service.jsx";
 
 
-const Acceuil = () => {
+const Accueil = () => {
     return (
         <section className='home'>
             <Banner image={bannerImg} texte="Chez vous, partout et ailleurs" />
-            <ul className='acceuil-ul'>
+            <ul className='accueil-ul'>
                 {
                     LogementService.GetAllLogement().map((logement) =>
                         < NavLink key={logement.id} to={"/Fichelogement/" + logement.id + "/#"} >
@@ -29,4 +29,4 @@ const Acceuil = () => {
     );
 };
 
-export default Acceuil;
+export default Accueil;

@@ -1,4 +1,4 @@
-.acceuil-ul {
+.accueil-ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #F6F6F6;
@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 1024px) {
 
-    .acceuil-ul {
+    .accueil-ul {
         grid-template-columns: 1fr 1fr;
         padding: 15px;
         gap: 20px 20px;
@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 640px) {
 
-    .acceuil-ul {
+    .accueil-ul {
         grid-template-columns: 1fr;
         padding: 15px 0 0 0;
         gap: 25px 0px;
