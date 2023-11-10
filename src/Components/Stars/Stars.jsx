@@ -7,7 +7,7 @@ import gris from "@/assets/Images/Components/Stars/StarsWhite.png"
 const Stars = ({ note }) => {
 
     return (
-        <div>
+        <div className='stars'>
             {
                 [...Array(5)].map((etoile, index) => {
                     if (index + 1 > note) {

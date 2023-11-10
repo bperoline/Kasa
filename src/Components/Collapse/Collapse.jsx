@@ -5,10 +5,19 @@ import flechebas from "@/assets/Images/Components/Dropdown/DropDownFlecheBas.png
 
 import "@/Components/Collapse/Collapse.css";
 
-const Collapse = ({ titre, description, liste }) => {
+const Collapse = ({ className, titre, description, liste }) => {
 
     const [isopen, setisopen] = useState(null);
 
+    if (isopen === null) {
+        return (
+            <li className='collapse' onClick={() => setisopen(true)}>
+                <div className='collapse-titre'>
+                    <h2 className='collapse-h2'>{titre}</h2>
+                    <img className='collapse-img' src={flechehaut} alt="flèche ouverte ou fermé" />
+                </div>
+            </li>);
+    }
 
     return isopen ? (
         <li className='collapse' onClick={() => setisopen(false)}>
@@ -17,7 +26,7 @@ const Collapse = ({ titre, description, liste }) => {
                 <img className='collapse-img collapse-img-vers-bas' src={isopen ? flechehaut : flechebas} alt="flèche ouverte ou fermé" />
             </div>
             {
-                isopen && (liste ? <div className='collapse-description collapse-description-bas'>{description}</div> : <div className='collapse-description collapse-description-bas'><p>{description}</p></div>)
+                isopen && (liste ? <div className={`collapse-description collapse-description-bas ${className}`}>{description}</div> : <div className={`collapse-description collapse-description-bas ${className}`}><p>{description}</p></div>)
             }
         </li>
     ) : (

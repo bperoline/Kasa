@@ -1,0 +1,23 @@
+.e404-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.e404 {
+    font-size: 200px;
+    font-weight: 600;
+}
+
+.e404-erreur {
+    font-size: 22px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.e404-lien {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    text-decoration: underline;
+}

@@ -10,8 +10,6 @@ import Profil from "@/Components/Profil/Profil.jsx"
 import Stars from "@/Components/Stars/Stars.jsx"
 
 
-
-
 const Fichelogement = () => {
 
     const [logement, setlogement] = useState({})
@@ -59,22 +57,32 @@ const Fichelogement = () => {
     return (
 
         <section className='fichelogement'>
-            <Slider pictures={logement.pictures} />
+            <div className='fichelogement-slider'><Slider pictures={logement.pictures} /></div>
             <ul className='fichelogement-ul'>
 
+                <div className='fichelogement-information'>
+                    <div className='fichelogement-propriete'>
+                        <div className='fichelogement-localisation'>
+                            <h1 className='fichelogement-title'> {logement.title} </h1>
+                            <div className='fichelogement-location'> {logement.location}</div>
+                            <div className='fichelogement-tag'>
+                                {logement.tags.map((data, id) => {
+                                    return <Tag key={id} unTag={data} />
+                                })}
+                            </div>
+                        </div>
+                    </div>
 
-                <div> {logement.title} </div>
-                <div> {logement.location}</div>
-                <div className='tag'>
-                    {logement.tags.map((data, id) => {
-                        return <Tag unTag={data} />
-                    })}
+                    <div className='fichelogement-notoriete'>
+                        <Profil identite={logement.host.name} image={logement.host.picture} />
+                        <Stars note={logement.rating} />
+                    </div>
                 </div>
 
-                <Profil identite={logement.host.name} image={logement.host.picture} />
-                <Stars note={logement.rating} />
-                <Collapse titre="Description" description={logement.description} liste={false} />
-                <Collapse titre="Equipements" description={displayequipement(logement.equipments)} liste={true} />
+                <div className='fichelogement-collapse'>
+                    <div className='fichelogement-collapse-description'><Collapse className='fichelogement-ccollapse' titre="Description" description={logement.description} liste={false} /></div>
+                    <div className='fichelogement-collapse-equipements'><Collapse className='fichelogement-ccollapse' titre="Equipements" description={displayequipement(logement.equipments)} liste={true} /></div>
+                </div>
 
             </ul>
         </section >

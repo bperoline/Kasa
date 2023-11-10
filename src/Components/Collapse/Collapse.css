@@ -1,5 +1,5 @@
 .collapse {
-    margin: 3% 10%;
+    margin: 3% 0;
 }
 
 .collapse-titre {
@@ -20,6 +20,7 @@
 }
 
 .collapse-img {
+    padding-top: 2px;
     height: 15px;
     width: 20px;
 }
