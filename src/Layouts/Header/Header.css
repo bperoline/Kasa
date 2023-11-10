@@ -12,12 +12,14 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    gap: 70px;
+    margin-left: auto;
 }
 
 .header-li {
     text-align: center;
 }
 
-.header-li:hover {
+.header-active {
     text-decoration: underline;
 }

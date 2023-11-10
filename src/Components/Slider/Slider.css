@@ -1,7 +1,52 @@
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider-bloc {
+    width: 100%;
+}
+
 .flechegauche {
-    background-color: black;
+    position: absolute;
+    top: 40%;
+    right: 30px;
+    font-size: 15px;
+    z-index: 10;
 }
 
 .flechedroite {
-    background-color: black;
+    position: absolute;
+    top: 40%;
+    left: 30px;
+    font-size: 15px;
+    z-index: 10;
+}
+
+.slider-container {}
+
+.slider-img {
+    object-fit: cover;
+    width: 100%;
+    height: 550px;
+    border-radius: 10px;
+    animation: animslider 300ms linear;
+}
+
+@keyframes animslider {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.slider-p {
+    margin-top: -40px;
+    margin-bottom: 40px;
+    color: white;
 }

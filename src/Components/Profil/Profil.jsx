@@ -4,7 +4,7 @@ import "@/Components/Profil/Profil.css";
 
 const Profil = ({ identite, image }) => {
     return (
-        <div>
+        <div className='profil-div'>
             <p className='profil-name'>{identite}</p>
             <img className='profil-img' src={image} alt="Photo du profil" />
         </div>

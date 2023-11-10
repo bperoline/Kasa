@@ -13,9 +13,7 @@ const PublicRouter = () => {
                 <Route path="/Apropos" element={<Apropos />} />
                 <Route path="/Fichelogement/:id" element={<Fichelogement />} />
                 <Route path="*" element={<E404 />} />
-
             </Route>
-
         </Routes>
     );
 };

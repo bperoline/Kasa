@@ -24,7 +24,6 @@ const Apropos = () => {
                                 <Collapse key={apropos} titre={apropos.titre} description={apropos.description} liste={false} />
                             </NavLink>
                         )
-
                     }
                 </ul>
             </section >
