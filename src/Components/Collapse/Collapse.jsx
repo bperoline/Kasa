@@ -14,7 +14,7 @@ const Collapse = ({ className, titre, description, liste }) => {
             <li className='collapse' onClick={() => setisopen(true)}>
                 <div className='collapse-titre'>
                     <h2 className='collapse-h2'>{titre}</h2>
-                    <img className='collapse-img' src={flechehaut} alt="flèche ouverte ou fermé" />
+                    <img className='collapse-img' src={flechebas} alt="flèche ouverte ou fermé" />
                 </div>
             </li>);
     }

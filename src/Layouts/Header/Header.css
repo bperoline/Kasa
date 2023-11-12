@@ -4,6 +4,11 @@
     margin-bottom: 3%;
 }
 
+.header-image {
+    max-width: 210px;
+    width: auto;
+}
+
 a {
     color: #FF6060;
 }
@@ -22,4 +27,41 @@ a {
 
 .header-active {
     text-decoration: underline;
+}
+
+/*MQ*/
+
+@media screen and (max-width: 1024px) {
+
+    .header {
+        margin-bottom: 4%;
+    }
+
+    .header-image {
+        max-width: 160px;
+    }
+
+    .header-ul {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .header {
+        grid-template-columns: 1fr 2fr;
+        margin-bottom: 5%;
+    }
+
+    .header-image {
+        max-width: 100px;
+    }
+
+    .header-ul {
+        gap: 0px;
+    }
+
+    .header-li {
+        text-transform: uppercase;
+    }
 }

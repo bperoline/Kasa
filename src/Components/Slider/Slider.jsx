@@ -22,7 +22,7 @@ const Slider = ({ pictures }) => {
     //    return null;
     //}
 
-    return (
+    /*return (
         <section className='slider'>
             <div className='slider-bloc'>
                 <a onClick={prevImage}><img className='flechedroite' src={flechegauche} alt='fleche droite' /></a>
@@ -42,6 +42,30 @@ const Slider = ({ pictures }) => {
 
             <p className='slider-p'>{index + 1} / {length}</p>
         </section>
+    );*/
+
+    return (
+        <div className="slideshow">
+            {
+                pictures.length > 1 && (
+                    <img className="arrowLeft" src={flechegauche} alt="flèche gauche" onClick={() => prevImage()} />
+                )
+            }
+            <div className="slideshowSlider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
+                {pictures.map((picture, index) => (
+                    <div className="slide" key={index} style={{ background: `no-repeat center/cover url(${picture})` }}></div>
+
+                ))}
+            </div>
+            {
+                pictures.length > 1 && (
+                    <>
+                        <img className="arrowRight" src={flechedroite} alt="flèche droite" onClick={() => nextImage()} />
+                        <span className="paging"> {index + 1} / {pictures.length} </span>
+                    </>
+                )
+            }
+        </div>
     );
 };
 

@@ -1,4 +1,20 @@
 .layout {
     margin: 2% 7%;
     color: #FF6060;
+    font-size: 16px;
+}
+
+/*MQ*/
+
+@media screen and (max-width: 1024px) {
+    .layout {
+        margin: 2% 6%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .layout {
+        margin: 2% 4%;
+        font-size: 17px;
+    }
 }
