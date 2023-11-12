@@ -6,9 +6,9 @@ import "@/Pages/Public/404/E404.css";
 const E404 = () => {
     return (
         <section className='e404-section'>
-            <p className='e404'>
+            <h2 className='e404'>
                 404
-            </p>
+            </h2>
 
             <p className='e404-erreur'>
                 Oups! La page que vous demandez n'existe pas.

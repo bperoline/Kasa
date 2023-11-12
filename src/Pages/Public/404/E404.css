@@ -8,6 +8,8 @@
 .e404 {
     font-size: 200px;
     font-weight: 600;
+    margin-top: 70px;
+
 }
 
 .e404-erreur {
@@ -20,4 +22,29 @@
     margin-top: 100px;
     margin-bottom: 60px;
     text-decoration: underline;
+}
+
+/*MQ*/
+
+@media screen and (max-width: 1024px) {
+    .e404 {
+        font-size: 170px;
+        margin-top: 110px;
+    }
+
+    .e404-erreur {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .e404 {
+        font-size: 100px;
+    }
+
+    .e404-erreur {
+        font-size: 18px;
+        text-align: center;
+    }
 }

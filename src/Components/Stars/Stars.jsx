@@ -12,11 +12,11 @@ const Stars = ({ note }) => {
                 [...Array(5)].map((etoile, index) => {
                     if (index + 1 > note) {
                         return (
-                            <img src={gris} alt='stars' key={index} />
+                            <img className='star' src={gris} alt='stars' key={index} />
                         )
                     } else {
                         return (
-                            <img src={orange} alt='stars' key={index} />
+                            <img className='star' src={orange} alt='stars' key={index} />
                         )
                     }
                 })

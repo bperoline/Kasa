@@ -10,10 +10,29 @@
 }
 
 .footer-image {
+    width: 140px;
     padding: 2% 0%;
 }
 
 
 .footer-p {
     color: white;
+}
+
+/*MQ*/
+
+@media screen and (max-width: 1024px) {
+    .footer-image {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer-image {
+        width: 110px;
+    }
+
+    .footer-p {
+        font-size: 16px;
+    }
 }

@@ -1,14 +1,29 @@
 .tag-li {
     margin-right: 1%;
+    margin-bottom: 1%;
 }
 
 .tag-span {
     background-color: #FF6060;
     color: white;
     height: 25px;
-    width: 150px;
+    width: 160px;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
+/*MQ*/
+
+@media screen and (max-width: 1024px) {
+    .tag-span {
+        width: 170px;
+    }
+
+    .tag-li {
+        margin: 1%;
+    }
+}
+
+@media screen and (max-width: 640px) {}
