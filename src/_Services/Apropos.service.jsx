@@ -1,4 +1,4 @@
-import listeapropos from "@/assets/Api/apropos.json";
+import listeapropos from "@/assets/api/apropos.json";
 
 let GetAllApropos = () => {
     return listeapropos;

@@ -20,7 +20,7 @@ const Apropos = () => {
                 <ul className='apropos-ul'>
                     {
                         AproposService.GetAllApropos().map((apropos) =>
-                            < NavLink key={apropos} to={"/Apropos/" + "/#"} >
+                            < NavLink key={apropos} to={"/Apropos"} >
                                 <Collapse key={apropos} titre={apropos.titre} description={apropos.description} liste={false} />
                             </NavLink>
                         )
