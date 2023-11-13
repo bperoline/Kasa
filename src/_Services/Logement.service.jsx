@@ -1,4 +1,4 @@
-import listelogements from "@/assets/Api/logements.json";
+import listelogements from "@/assets/api/logements.json";
 
 let GetAllLogement = () => {
     return listelogements;

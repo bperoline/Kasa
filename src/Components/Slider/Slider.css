@@ -90,7 +90,6 @@
 
 .slide {
     display: inline-block;
-    background-size: cover;
     height: 400px;
     width: 100%;
     border-radius: 40px;
@@ -103,7 +102,6 @@
     transform: translateY(-50%);
     z-index: 99;
 }
-
 
 .arrowRight {
     position: absolute;
@@ -120,7 +118,6 @@
     right: 49.11%;
     top: 86.19%;
     bottom: 6.01%;
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
