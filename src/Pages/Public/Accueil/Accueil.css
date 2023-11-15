@@ -7,6 +7,8 @@
     gap: 40px 40px;
 }
 
+/*MQ*/
+
 @media screen and (max-width: 1024px) {
 
     .accueil-ul {
@@ -25,9 +27,3 @@
         background-color: white;
     }
 }
-
-/*MQ*/
-
-@media screen and (max-width: 1024px) {}
-
-@media screen and (max-width: 640px) {}
