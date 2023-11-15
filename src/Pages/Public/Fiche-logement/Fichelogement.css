@@ -1,18 +1,8 @@
-.fichelogement {}
-
-.fichelogement-slider {}
-
-.fichelogement-ul {}
-
 .fichelogement-information {
     display: grid;
     grid-template-columns: 3fr 1fr;
     margin: 3% 0;
 }
-
-.fichelogement-propriete {}
-
-.fichelogement-localisation {}
 
 .fichelogement-title {
     font-weight: 500;
@@ -30,10 +20,6 @@
     flex-wrap: wrap;
     margin: 4% 0;
 }
-
-.fichelogement-notoriete {}
-
-.fichelogement-ccollapse {}
 
 .fichelogement-collapse {
     grid-template-columns: 1fr 1fr;

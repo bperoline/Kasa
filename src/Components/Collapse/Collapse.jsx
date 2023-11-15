@@ -37,46 +37,6 @@ const Collapse = ({ className, titre, description, liste }) => {
             </div>
         </li>
     )
-
-
-    /*if (!liste) {
-
-        if (isopen === null) {
-            return (
-                <li className='collapse' onClick={() => setisopen(true)}>
-                    <div className='collapse-titre'><h2>{titre}</h2><img className='collapse-img' src={flechehaut} alt="flèche ouverte ou fermé" /></div>
-                </li>);
-        }
-
-        return isopen ? (
-            <li className='collapse' onClick={() => setisopen(false)}>
-                <div className='collapse-titre'><h2>{titre}</h2><img className='collapse-img collapse-vers-bas' src={flechebas} alt="flèche ouverte ou fermé" /></div>
-                <div className='collapse-description'><p>{description}</p></div>
-            </li>
-        ) : (
-            <li className='collapse' onClick={() => setisopen(true)}>
-                <div className='collapse-titre'>{titre}<img className='collapse-img collapse-vers-haut' src={flechehaut} alt="flèche ouverte ou fermé" /></div>
-            </li>
-        );
-    } else {
-        if (isopen === null) {
-            return (
-                <li className='collapse' onClick={() => setisopen(true)}>
-                    <div className='collapse-titre'><h2>{titre}</h2><img className='collapse-img' src={flechehaut} alt="flèche ouverte ou fermé" /></div>
-                </li>);
-        }
-
-        return isopen ? (
-            <li className='collapse' onClick={() => setisopen(false)}>
-                <div className='collapse-titre'><h2>{titre}</h2><img className='collapse-img collapse-vers-bas' src={flechebas} alt="flèche ouverte ou fermé" /></div>
-                <ul className='collapse-description'><li>{description}</li></ul>
-            </li>
-        ) : (
-            <li className='collapse' onClick={() => setisopen(true)}>
-                <div className='collapse-titre'><h2>{titre}</h2><img className='collapse-img collapse-vers-haut' src={flechehaut} alt="flèche ouverte ou fermé" /></div>
-            </li>
-        );
-    }*/
 };
 
 export default Collapse;
